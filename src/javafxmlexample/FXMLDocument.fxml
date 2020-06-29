@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlexample.FXMLDocumentController">
+   <children>
+      <VBox layoutX="9.0" layoutY="9.0" prefHeight="242.0" prefWidth="153.0" spacing="10.0">
+         <children>
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="16.0" prefWidth="84.0" text="Vehicle List" textAlignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="carcheckbox" mnemonicParsing="false" text="Car">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="bikecheckbox" mnemonicParsing="false" text="Bike">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="planecheckbox" mnemonicParsing="false" text="Airplane">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </CheckBox>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#vehicleorderbuttonpushed" text="Button" textAlignment="RIGHT" />
+            <Label fx:id="vehicleorderlabel" contentDisplay="CENTER" lineSpacing="10.0" prefHeight="68.0" prefWidth="150.0" text="label" textAlignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="162.0" layoutY="9.0" prefHeight="242.0" prefWidth="153.0" spacing="10.0">
+         <children>
+            <Label text="Choice Object" />
+            <ChoiceBox fx:id="choicebox" prefHeight="28.0" prefWidth="115.0" />
+            <Button mnemonicParsing="false" onAction="#choiceboxbuttonpushed" text="Button" />
+            <Label fx:id="choiceboxlabel" contentDisplay="CENTER" prefHeight="56.0" prefWidth="149.0" text="Label" textAlignment="CENTER" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
